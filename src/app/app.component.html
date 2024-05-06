@@ -1,36 +1,37 @@
-<h1 style="font-size:40px; color:rgba(199, 0, 56, 0.946);">FORMS</h1>
-<form action="/action_page.php">
-    <label for="fname"> Name:</label><br>  
-    <input type="text" id="fname" name="fname" value="    "required ><br>
-    <label for="lname">Email:</label><br>
-    <input type="text" id="lname" name="lname" value="    " required ><br>
-    <label for="sname">Address:</label><br>
-    <input type="address" id="sname" name="sname" value="      " required  size = 70 style= 'height:25px'>
-    <label for="sname"> &nbsp; Address2:</label>
-    <input type="address" id="sname" name="sname" value="     " required size = 50  style= 'height:25px ' >
-    <label for="sname"> &nbsp; Zipcode:</label>
-    <input type="adress" id="sname" name="sname" value="     "  maxlength= "5" required size = 25  style= 'height:30px'  >
-    <br>
-    <label for="sname"> City:</label><br>
-    <input type="city" id="sname" name="sname" value="      "required  size = 70 style= 'height:25px'>
-    <label for="sname"> &nbsp; State:   </label> &nbsp;
-    <input type="state" id="sname" name="sname" value="     " required  size = 50  style= 'height:25px ' >
-    <label for="sname"> &nbsp; Country: </label> &nbsp;
-    <input type="country" id="sname" name="sname" value="     " size = 25 required style= 'height:30px' ><br><br><br>
-    <button type="submit" VALUE="SUBMIT" onclick = "window.alert('form submitted sucessfully')"> SUBMIT </button> &nbsp;<input type="reset" value="Reset"> 
-
-  </form>
-
- 
-  
-  <style> 
-     input[type=text] {
-      width: 100%;
-      padding: 10px 10px;
-      margin: 5px 3px;
-      box-sizing: border-box;
-      border: 2px solid #565151;
-      
-    }
-    
-    </style>
+<h1 class="heading">FORMS</h1>
+<form>
+    <label for="fname"> Name</label><span class="required">*</span><br>
+    <input type="text" id="fname" name="fname" value="" required><br>
+    <label for="lname">Email</label><span class="required">*</span><br>
+    <input type="text" id="lname" name="lname" value="" required><br>
+    <div style="display:flex; flex-direction: row">
+        <div class="address">
+            <label for="sname">Address</label><span class="required">*</span><br>
+            <input type="address" id="sname" name="sname" value="" required>
+        </div>
+        <div class="address2">
+            <label for="sname">Address2</label><br>
+            <input type="text" id="sname" name="sname" value="">
+        </div>
+        <div class="zipcode">        
+            <label for="sname">Zipcode</label><span class="required">*</span> <br>
+            <input type="text" id="sname" name="sname" value="" maxlength="5" required>
+        </div>
+    </div>
+    <div style="display:flex; flex-direction: row">
+        <div class="city">
+            <label for="sname">City</label><span class="required">*</span>
+            <input type="text" id="sname" name="sname" value="" required>
+        </div>
+        <div class="state">
+            <label for="sname">State/Province/Region</label> <span class="required">*</span>
+            <input type="text" id="sname" name="sname" value="" required>
+        </div>
+        <div class="country">        
+            <label for="sname">Country </label><span class="required">*</span> 
+            <input type="text" id="sname" name="sname" value="" required >
+        </div>
+    </div>
+    <button type="submit" value="Submit" class="submit">Submit</button>
+    <button type="submit" value="Reset" class="reset">Reset</button>
+</form>

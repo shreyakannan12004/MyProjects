@@ -1,3 +1,43 @@
-.class{
-    
+input {
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid #565151;    
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.required {
+    color: red;
+}
+.heading{
+    font-size:40px; 
+    color:rgba(199, 0, 56, 0.946);
+}
+.address, .address2, .zipcode, .city, .state, .country{
+    width: 33%;
+    margin-right: 10px;
+}
+.zipcode, .country{    
+    margin-right: 0px;
+}
+button{
+    margin: 10px 0px;
+}
+.submit{
+    margin-right: 10px;
+    background-color: #2e9ad4;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.reset{
+    background-color: #cbc0c0;
+    padding: 10px 20px;
+    border: 1px solid #cbc0c0;
+    border-radius: 5px;
+}
+label{
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
